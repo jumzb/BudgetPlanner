@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp">
+
+    <EditText
+        android:id="@+id/AmountBox"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="amount"
+        android:inputType="numberDecimal" />
+
+
+    <EditText
+        android:id="@+id/ReasonBox"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="item"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/AddButton"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:text="@string/add_amount" />
+
+    <Button
+        android:id="@+id/SubtractButton"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:text="@string/subtract_amount" />
+
+    <Button
+        android:id="@+id/RemoveButton"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/remove_amount" />
+
+    <ListView
+        android:id="@+id/BudgetList"
+        android:layout_width="380dp"
+        android:layout_height="220dp">
+
+        <TextView
+            android:id="@+id/TotalText"
+            android:layout_width="380dp"
+            android:layout_height="73dp"
+            android:textSize="20sp"></TextView>
+    </ListView>
+
+</LinearLayout>
